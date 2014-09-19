@@ -1,0 +1,11 @@
+Protocolo para o servidor de chat:
+
+A primeira mensagem do cliente para o servidor deve ser:
+A:nome: (servidor responde okA)
+
+Depois o cliente pode mandar as seguintes mensagens:
+B: (servidor responde okB) , está mensagem é só para se manter conectado
+C: (servidor responde nome1:nome2:nome3:FIM), está mensagem requisita os usuários conectados
+D:nome:mensagem: (servidor responde okD), está mensagem pede para enviar mensagem ao usuário "nome"
+
+(Testar utilizando o telnet: telnet localhost 2020)
